@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelter Pets</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    
+<link rel="stylesheet" href="index.css" />
+</head>
+
+<body class="container text-center">
+    
+       <img src="images/dogcat.jpg" height="200"><img src="images/guinea pigs.jpg" height="200"> <img src="images/birdy.jpg" height="200">
+    <div class="Jumbotron text-center bg-primary text-white">
+    </div>
+    <div id="new-pet" class="newPet">
+        <h2 style="text-align: center;">Shelter Pets</h2>
+        <p>Add and Delete pets as they arrive or are adopted</p>
+    </div>
+    <hr>
+    <form>
+        <div class="row">
+            <div class="col-md-2">
+                <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Pet Type"
+                id="txtType"
+                required
+                />
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Name of Pet"
+                id="txtname"
+                required
+            />
+            <br>
+
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Sex of Pet"
+                id="txtsex"
+                required
+                />
+                <br>
+
+        </div>
+        <div class="row">
+            
+            <div class="col-md-2">
+                <input
+                type="text"
+                class="form-control"
+                placeholder="Enter arrival date"
+                id="txtarrival"
+                required
+                />
+                <br>
+
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <input
+                type="text"
+                class="form-control"
+                placeholder="Enter mobile number"
+                id="txtmobile"
+                required
+                />
+                <br>
+             </div>
+
+        </div>
+                
+                   
+        <div class="row">
+            <div class="col-md-2 col-sm-6 col-12 p-2">
+                <input id="btnAdd" type="submit" value="Add New Pet" class="btn btn-primary btn-lg">
+            </div>
+                    
+
+        </div>
+    </form>     
+       
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-12 p-2">
+            <table id="tblData" class="table table-bordered table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>Pet ID</th>
+                        <th>Pet Type</th>
+                        <th>Name</th>
+                        <th>Sex</th>
+                        <th>Arrival Date</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+        <input type="text" id="deletePet" class="form-control"> <br>
+        <button id="btnRemove" class="btn btn-primary form-control">Delete a Pet</button>
+    
+
+    
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="index.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+
+</html>
